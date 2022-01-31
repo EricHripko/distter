@@ -16,14 +16,15 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
       ),
-      home: const WelcomePage(),
+      home: const AuthPage(),
     );
   }
 }
 
-/// Page responsible for welcoming the user to the application.
-class WelcomePage extends StatelessWidget {
-  const WelcomePage({Key? key}) : super(key: key);
+/// Page responsible for welcoming the user to the application and
+/// starting the authentication.
+class AuthPage extends StatelessWidget {
+  const AuthPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -35,7 +36,7 @@ class WelcomePage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              SvgPicture.asset('assets/welcome/hero.svg', width: 128),
+              SvgPicture.asset('assets/auth/hero.svg', width: 128),
               const SizedBox(height: 16),
               Text(
                 'Welcome to Distter!',

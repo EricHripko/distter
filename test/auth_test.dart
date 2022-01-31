@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
-  group('Welcome page', () {
+  group('AuthPage page', () {
     testWidgets('builds successfully', (WidgetTester tester) async {
       // Arrange
-      const app = MaterialApp(home: WelcomePage());
+      const app = MaterialApp(home: AuthPage());
 
       // Act
       await tester.pumpWidget(app);
